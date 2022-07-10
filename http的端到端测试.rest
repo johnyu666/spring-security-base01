@@ -1,0 +1,14 @@
+### 登录：可以使用john/123 和 tom/123的组合，返回一个token
+POST http://localhost:8080/user/login?username=tom&password=123
+
+### 访问"查询"资源（USER可用）：
+GET http://localhost:8080/books/find
+token: 06afd692-bbcb-41aa-912f-a914624d6696
+
+### 访问"删除"资源 （ADMIN可用）：
+GET http://localhost:8080/books/del
+token: 06afd692-bbcb-41aa-912f-a914624d6696
+
+### 退出
+http://localhost:8080/user/logout
+token: 06afd692-bbcb-41aa-912f-a914624d6696
